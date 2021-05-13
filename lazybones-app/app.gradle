@@ -1,13 +1,13 @@
 buildscript {
     repositories {
         // Keep this for testing dev versions of the lazybones-templates plugin
-//        mavenCentral()
-//        mavenLocal()
+        mavenCentral()
+        mavenLocal()
     }
 
     dependencies {
         // Keep this for testing dev versions of the lazybones-templates plugin
-//        classpath "uk.co.cacoethes:lazybones-gradle:1.2.3"
+        classpath "uk.co.cacoethes:lazybones-gradle:1.2.3"
     }
 }
 
@@ -22,6 +22,7 @@ plugins {
 apply plugin: "groovy"
 apply plugin: "application"
 apply plugin: "codenarc"
+apply plugin: "maven"
 
 applicationName = "lazybones"
 mainClassName = "uk.co.cacoethes.lazybones.LazybonesMain"
